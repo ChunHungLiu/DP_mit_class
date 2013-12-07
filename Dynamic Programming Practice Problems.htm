@@ -1,0 +1,140 @@
+
+<!-- saved from url=(0043)http://people.csail.mit.edu/bdean/6.046/dp/ -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1"><script language="JavaScript">
+<!--
+  function win(fileName) {
+    myWin = window.open("","myWindow","resizable=yes,scrollbars=no,status=no,width=0,height=0,bgcolor=ffffff");
+    myWin.document.write("<body bgcolor=#ffffff>");
+    myWin.document.write( "<OBJECT CLASSID=\"clsid:D27CDB6E-AE6D-11cf-96B8-444553540000\"" );
+    myWin.document.write( "CODEBASE=\"http://active.macromedia.com/flash4/cabs/swflash.cab#version=4,0,0,0\"" );
+    myWin.document.write( "ID=navmovie WIDTH=100% HEIGHT=100%> " );
+    myWin.document.write( "<PARAM NAME=\"movie\" VALUE=\""+ fileName + "\">" ); 
+    myWin.document.write( "<PARAM NAME=\"play\" VALUE=\"true\">" );
+    myWin.document.write( "<PARAM NAME=\"quality\" VALUE=\"high\">" ); 
+    myWin.document.write( "<PARAM NAME=\"loop\" VALUE=\"false\">" ); 
+    myWin.document.write( "<EMBED NAME=navmovie SRC=" + fileName +" WIDTH=100% HEIGHT=100% PLAY=true LOOP=false" );
+    myWin.document.writeln( "SWLIVECONNECT=true QUALITY=high> </OBJECT> </body>" );
+    myWin.document.close(); 
+  }
+//-->
+</script>
+
+
+<title>Dynamic Programming Practice Problems</title>
+<style type="text/css"></style><style>[touch-action="none"]{ -ms-touch-action: none; touch-action: none; }[touch-action="pan-x"]{ -ms-touch-action: pan-x; touch-action: pan-x; }[touch-action="pan-y"]{ -ms-touch-action: pan-y; touch-action: pan-y; }[touch-action="scroll"],[touch-action="pan-x pan-y"],[touch-action="pan-y pan-x"]{ -ms-touch-action: pan-x pan-y; touch-action: pan-x pan-y; }</style></head>
+
+<body style="" class="hasGoogleVoiceExt goog_qs-closed"><h2>Dynamic Programming Practice Problems</h2> <small>This site
+contains a collection of practice dynamic programming problems and
+their solutions.  The problems listed below are also available in a <a target="blank_" href="http://people.csail.mit.edu/bdean/6.046/dp/dp_s04.pdf">pdf handout</a>.  To view the solution
+to one of the problems below, click on its title.  To view the
+solutions, you'll need a machine which can view Macromedia Flash
+animations and which has audio output.  If you want, you can also view
+a quick review from recitation on how to solve the <a href="javascript:win('dp_0.swf')">integer knapsack problem</a> (with
+multiple copies of items allowed) using dynamic programming.
+
+
+
+<hr>
+
+
+
+
+
+
+
+
+
+
+<h3>Problems: </h3>
+<ol compact="">
+
+<li value="1"> <a href="javascript:win('dp_1.swf')">Maximum Value Contiguous Subsequence</a>.  Given a
+sequence of n real numbers A(1) ... A(n), determine a contiguous
+subsequence A(i) ... A(j) for which the sum of elements in the
+subsequence is maximized. 
+
+</li><li value="2"> <a href="javascript:win('dp_2.swf')">Making Change</a>.  You are given n types of coin
+denominations of values v(1) &lt; v(2) &lt; ... &lt; v(n) (all integers).
+<span class="goog_qs-tidbit goog_qs-tidbit-0">Assume v(1) = 1, so you can always make change for any amount of money
+C.</span>  Give an algorithm which makes change for an amount of money C with
+as few coins as possible. [on problem set 4]
+
+</li><li value="3"> <a href="javascript:win('dp_3.swf')">Longest Increasing Subsequence</a>.  Given a sequence of n
+real numbers A(1) ... A(n), determine a subsequence (not necessarily
+contiguous) of maximum length in which the values in the subsequence
+form a strictly increasing sequence. [on problem set 4]
+
+</li><li value="4"> <a href="javascript:win('dp_5.swf')">Box Stacking</a>. You are given a set of n types of
+rectangular 3-D boxes, where the i^th box has height h(i), width
+w(i) and depth d(i) (all real numbers).  You want to create a stack
+of boxes which is as tall as possible, but you can only stack a box on
+top of another box if the dimensions of the 2-D base of the lower box
+are each strictly larger than those of the 2-D base of the higher box.
+Of course, you can rotate a box so that any side functions as its
+base.  It is also allowable to use multiple instances of the same
+type of box. 
+
+</li><li value="5"> <a href="javascript:win('dp_6.swf')">Building Bridges</a>.  Consider a 2-D map with a
+horizontal river passing through its center.  There are n cities on
+the southern bank with x-coordinates a(1) ... a(n) and n cities
+on the northern bank with x-coordinates b(1) ... b(n).  You want
+to connect as many north-south pairs of cities as possible with
+bridges such that no two bridges cross.  When connecting cities, you
+can only connect city i on the northern bank to city i on the southern
+bank. (Note: this problem was incorrectly stated on the paper copies
+of the handout given in recitation.) 
+
+</li><li value="6"> <a href="javascript:win('dp_7.swf')">Integer Knapsack Problem (Duplicate Items
+Forbidden)</a>. This is the same problem as the example above, except here it
+is forbidden to use more than one instance of each type of item. 
+
+</li><li value="7"> <a href="javascript:win('dp_4.swf')">Balanced Partition</a>. You have a set of n integers
+each in the range 0 ... K.  Partition these integers into two
+subsets such that you minimize |S1 - S2|, where S1 and S2
+denote the sums of the elements in each of the two subsets. 
+
+</li><li value="8"> <a href="javascript:win('dp_8.swf')">Edit Distance</a>. Given two text strings A of length
+n and B of length m, you want to transform A into B with a
+minimum number of operations of the following types: delete a
+character from A, insert a character into A, or change some
+character in A into a new character.  The minimal number of such operations
+required to transform A into B is called the edit distance between
+A and B. 
+
+</li><li value="9"> <a href="javascript:win('dp_9.swf')">Counting Boolean Parenthesizations</a>. <span class="goog_qs-tidbit goog_qs-tidbit-1">You are given a
+boolean expression consisting of a string of the symbols 'true',</span>
+'false', 'and', 'or', and 'xor'.  <span class="goog_qs-tidbit goog_qs-tidbit-2">Count the number of ways to
+parenthesize the expression such that it will evaluate to true.</span>  For
+example, there is only 1 way to parenthesize 'true and false xor true'
+such that it evaluates to true. 
+
+</li><li value="10"> <a href="javascript:win('dp_10.swf')">Optimal Strategy for a Game</a>. <span class="goog_qs-tidbit goog_qs-tidbit-3">Consider a row of
+n coins of values v(1) ... v(n), where n is even.</span>  We play a
+game against an opponent by alternating turns.  In each turn, a player
+selects either the first or last coin from the row, removes it from
+the row permanently, and receives the value of the coin.  Determine the
+maximum possible amount of money we can definitely win if we move
+first. 
+
+</li><li value="11"> Two-Person Traversal of a Sequence of Cities. You
+are given an ordered sequence of n cities, and the distances between
+every pair of cities.  You must partition the cities into two
+subsequences (not necessarily contiguous) such that person A visits
+all cities in the first subsequence (in order), person B visits all cities
+in the second subsequence (in order), and such that the sum of the total
+distances travelled by A and B is minimized.  Assume that person A and
+person B start initially at the first city in their respective
+subsequences. 
+
+</li><li value="12"> Bin Packing (Simplified Version). You have n1
+items of size s1, n2 items of size s2, and n3 items of
+size s3.  You'd like to pack all of these items into bins each of
+capacity C, such that the total number of bins used is minimized. 
+
+</li></ol>
+
+
+
+
+
+</small><div id="goog_qs_tidbit_box" class="notranslate"><div id="goog_qs-wrapper"><div id="goog_qs-box-toggle" title="Open Google Quick Scroll" style="background-image: url(chrome-extension://okanipcmceoeemlbjnmnbdibhgpbllgc/images/icon16x16.png);"></div><div id="goog_qs-box-help" title="Open the help and options page" style="background-image: url(chrome-extension://okanipcmceoeemlbjnmnbdibhgpbllgc/images/help.png);"></div><div id="goog_qs-box-info" style="background-image: url(chrome-extension://okanipcmceoeemlbjnmnbdibhgpbllgc/images/icon16x16.png);"><span class="goog_qs-nowrap">M<img>atches</span> <span class="goog_qs-nowrap">i<img>n</span> <span class="goog_qs-nowrap">p<img>age</span> <span class="goog_qs-nowrap">f<img>or</span> <span class="goog_qs-query"><span class="goog_qs-nowrap">b<img>oolean</span> <span class="goog_qs-nowrap">e<img>xpression</span> <span class="goog_qs-nowrap">r<img>esult</span> <span class="goog_qs-nowrap">c<img>ount</span> <span class="goog_qs-nowrap">t<img>he</span> <span class="goog_qs-nowrap">n<img>umber</span> <span class="goog_qs-nowrap">o<img>f</span> <span class="goog_qs-nowrap">w<img>ays</span> <span class="goog_qs-nowrap">o<img>f</span> <span class="goog_qs-nowrap">p<img>arenthesizing</span> <span class="goog_qs-nowrap">t<img>he</span> <span class="goog_qs-nowrap">e<img>xpression</span></span></div><div id="goog_qs-box-tidbits"><div class="goog_qs-box-tidbit" title="Click to see this text in the page"><span class="goog_qs-nowrap">A<img>ssume</span> <span class="goog_qs-nowrap">v<img>(1)</span> = <span class="goog_qs-nowrap">1<img>,</span> <span class="goog_qs-nowrap">s<img>o</span> <span class="goog_qs-nowrap">y<img>ou</span> <span class="goog_qs-nowrap">c<img>an</span> <span class="goog_qs-nowrap">a<img>lways</span> <span class="goog_qs-nowrap">m<img>ake</span> <span class="goog_qs-nowrap">c<img>hange</span> <span class="goog_qs-nowrap">f<img>or</span> <span class="goog_qs-nowrap">a<img>ny</span> <span class="goog_qs-nowrap">a<img>mount</span> <span class="goog_qs-nowrap">o<img>f</span> <span class="goog_qs-nowrap">m<img>oney</span> <span class="goog_qs-nowrap">C<img>.</span> <span class="goog_qs-go">»</span></div><div class="goog_qs-box-tidbit" title="Click to see this text in the page"><span class="goog_qs-nowrap">Y<img>ou</span> <span class="goog_qs-nowrap">a<img>re</span> <span class="goog_qs-nowrap">g<img>iven</span> a <em><span class="goog_qs-nowrap">b<img>oolean</span> <span class="goog_qs-nowrap">e<img>xpression</span></em> <span class="goog_qs-nowrap">c<img>onsisting</span> <span class="goog_qs-nowrap">o<img>f</span> a <span class="goog_qs-nowrap">s<img>tring</span> <span class="goog_qs-nowrap">o<img>f</span> <span class="goog_qs-nowrap">t<img>he</span> <span class="goog_qs-nowrap">s<img>ymbols</span> 'true',... <span class="goog_qs-go">»</span></div><div class="goog_qs-box-tidbit" title="Click to see this text in the page"><em><span class="goog_qs-nowrap">C<img>ount</span> <span class="goog_qs-nowrap">t<img>he</span> <span class="goog_qs-nowrap">n<img>umber</span> <span class="goog_qs-nowrap">o<img>f</span> <span class="goog_qs-nowrap">w<img>ays</span></em> <span class="goog_qs-nowrap">t<img>o</span> <em><span class="goog_qs-nowrap">p<img>arenthesize</span> <span class="goog_qs-nowrap">t<img>he</span> <span class="goog_qs-nowrap">e<img>xpression</span></em> <span class="goog_qs-nowrap">s<img>uch</span> <span class="goog_qs-nowrap">t<img>hat</span> <span class="goog_qs-nowrap">i<img>t</span> <span class="goog_qs-nowrap">w<img>ill</span> <span class="goog_qs-nowrap">e<img>valuate</span> <span class="goog_qs-nowrap">t<img>o</span> <span class="goog_qs-nowrap">t<img>rue.</span> <span class="goog_qs-go">»</span></div><div class="goog_qs-box-tidbit" title="Click to see this text in the page"><span class="goog_qs-nowrap">C<img>onsider</span> a <em><span class="goog_qs-nowrap">r<img>ow</span></em> <span class="goog_qs-nowrap">o<img>f</span> n <span class="goog_qs-nowrap">c<img>oins</span> <span class="goog_qs-nowrap">o<img>f</span> <span class="goog_qs-nowrap">v<img>alues</span> <span class="goog_qs-nowrap">v<img>(1)</span> ... <span class="goog_qs-nowrap">v<img>(n),</span> <span class="goog_qs-nowrap">w<img>here</span> n <span class="goog_qs-nowrap">i<img>s</span> <span class="goog_qs-nowrap">e<img>ven.</span> <span class="goog_qs-go">»</span></div></div><div id="goog_qs-box-bottom"><div class="goog_qs-more-matches" id="goog_qs-box-more-tidbits"><span class="goog_qs-nowrap">M<img>ore</span> <span class="goog_qs-nowrap">m<img>atches</span> <span class="goog_qs-go">»</span></div><div class="goog_qs-more-matches" id="goog_qs-box-fewer-tidbits" style="display:none"><span class="goog_qs-go">«</span>  <span class="goog_qs-nowrap">F<img>ewer</span> <span class="goog_qs-nowrap">m<img>atches</span></div></div><div style="clear:both"></div></div></div></body></html>
